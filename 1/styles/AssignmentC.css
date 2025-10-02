@@ -1,0 +1,47 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 38px;
+    font-style: italic;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-style: italic;
+}
+
+p {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-style: italic;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+ul {
+    list-style-type: square;
+}
+ul ul {
+    list-style-type: circle;
+}
+ul ul ul {
+    list-style-type: square;
+}
