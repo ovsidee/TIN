@@ -7,54 +7,45 @@
     <title>AssignmentB</title>
 </head>
 <body>
-<!--    <form>-->
-<!--        <label>Name:</label>-->
-<!--        <input type="text">-->
-<!--        <br>-->
-<!--        <label>Surname:</label>-->
-<!--        <input type="text">-->
-<!--        <br>-->
-<!--        <label>Password:</label>-->
-<!--        <input type="password">-->
-<!--        <br>-->
-<!--        <label>Checkbox:</label>-->
-<!--        <input type="checkbox">-->
-<!--    </form>-->
+<form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
 
-<!--    <form>-->
-<!--        <input type="radio" name="language" >-->
-<!--        <label>HTML</label>-->
-<!--        <br>-->
-<!--        <input type="radio" name="language">-->
-<!--        <label>CSS</label>-->
-<!--        <br>-->
-<!--        <input type="radio" name="language">-->
-<!--        <label>JavaScript</label>-->
-<!--    </form>-->
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" required><br>
 
-<!--    <label>Choose a country:</label>-->
-<!--    <select name="country">-->
-<!--        <option value="poland">Poland</option>-->
-<!--        <option value="germany">Germany</option>-->
-<!--        <option value="france">France</option>-->
-<!--        <option value="usa">USA</option>-->
-<!--    </select>-->
-<!--    <br>-->
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
 
-<!--    <label>Information:</label>-->
-<!--    <br>-->
-<!--    <textarea name="comments" rows="5" cols="30" placeholder="Enter your information here"></textarea>-->
-<!--    <br>-->
+    <label for="checkBoxSendMoney">I agree to send money every week</label>
+    <input type="checkbox" id="checkBoxSendMoney" required><br>
 
-<!--    <input type="submit" value="Submit">-->
-<!--    <input type="reset" value="Reset">-->
-    <form>
-        <label>Name:</label>
-        <input type="text">
-        <br>
-        <label>Surname:</label>
-        <input>
-    </form>
+    <label>Choose a language:</label>
+    <input type="radio" id="html" name="language" value="HTML">
+    <label for="html">HTML</label>
+
+    <input type="radio" id="css" name="language" value="CSS">
+    <label for="css">CSS</label>
+
+    <input type="radio" id="js" name="language" value="JavaScript">
+    <label for="js">JavaScript</label><br>
+
+    <label>Choose a country:</label>
+    <select id="country" name="country">
+        <option value="">Select a country</option>
+        <option>Poland</option>
+        <option>Germany</option>
+        <option>France</option>
+        <option>Spain</option>
+    </select><br>
+
+    <label for="comments">Additional information:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your information here"></textarea><br>
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</form>
+
 </body>
 </html>
 

@@ -1,0 +1,36 @@
+form {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    font-style: italic;
+    color: blue;
+}
+
+label[for="name"],
+label[for="surname"],
+label[for="password"],
+label[for="checkBoxSendMoney"] {
+    color: red;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    font-size: 18px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    font-size: 18px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
