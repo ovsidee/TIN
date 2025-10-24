@@ -16,7 +16,7 @@
 
 
 //1
-function presentingForLoop(){
+function presentingForLoop() {
     console.log("1. Presenting for loop")
     for (let i = 1; i < 5; i++) {
         console.log(i);
@@ -119,7 +119,7 @@ console.log("Example 3 (Zero parameters):");
 console.log(createListSentence());
 
 console.log("----------------------------")
-console.log("8. Presenting a function with variable number of parameters")
+console.log("8. Presenting a function which accepts the function")
 
 //8
 function processArrayUsingFunction(arr, operation) {
