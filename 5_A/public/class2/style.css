@@ -1,0 +1,127 @@
+/*body style (font, etc)*/
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    background-color: #fff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* header + image style*/
+.rounded_Corners {
+    text-align: center;
+    margin: 20px 0 40px;
+}
+
+.rounded_Corners img {
+    margin-top: 30px;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    transform: rotate(6deg);
+    background: linear-gradient(to bottom right, white, white);
+    padding: 12px;
+    box-shadow: 2px 5px 35px rgba(0, 0, 0);
+}
+
+.rounded_Corners h1 {
+    margin-top: 50px;
+    margin-bottom: -30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* layout */
+.page {
+    display: flex;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+/* gallery of dogs */
+.gallery figure {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery img {
+    width: 285px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.gallery figcaption {
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+/* main text */
+.text {
+    flex: 1;
+    column-count: 2;
+    column-gap: 40px;
+    text-align: justify;
+}
+
+.text p {
+    margin-bottom: 15px;
+}
+
+/* images in text */
+.float-left {
+    float: left;
+    margin: 1px 10px 1px 1px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 0 10px;
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* quote */
+.pull-quote {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 15px 0;
+    break-inside: avoid;
+    color: red;
+    border-left-color: red;
+}
+
+/* footer */
+footer {
+    text-align: center;
+    background-color: #eee;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* responsive (<800px) */
+@media (max-width: 800px) {
+    .page {
+        flex-direction: column;
+    }
+    .text {
+        column-count: 1;
+    }
+    .gallery {
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery figure {
+        width: 45%;
+        margin: 10px;
+    }
+}

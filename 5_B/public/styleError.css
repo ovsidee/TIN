@@ -1,0 +1,14 @@
+body {
+    background-color: navajowhite;
+}
+
+.error {
+    color: red;
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
