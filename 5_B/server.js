@@ -13,16 +13,15 @@ app.get('/', (req, res) => {
 
 app.post('/submit', (req, res) => {
     const name = req.body.name;
-    const age = req.body.age;
+    const ageNum = Number(req.body.age);
     const email = req.body.email;
 
     const fs = require('fs');
 
-    let errorMessage = validation(name, age, email);
+    let errorMessage = validation(name, ageNum, email);
     if (errorMessage) {
         let htmlError = fs.readFileSync(path.join(__dirname, 'public/errorForm.html'), 'utf8');
-        htmlError = htmlError
-            .replace('${error}', errorMessage);
+        htmlError = htmlError.replace('${error}', errorMessage);
 
         return res.send(htmlError);
     }
@@ -30,23 +29,24 @@ app.post('/submit', (req, res) => {
     let htmlResponse = fs.readFileSync(path.join(__dirname, 'public/responseForm.html'), 'utf8');
     htmlResponse = htmlResponse
         .replace('${name}', name)
-        .replace('${age}', age)
+        .replace('${age}', ageNum)
         .replace('${email}', email);
 
     res.send(htmlResponse);
 });
 
-function validation(name, age, email) {
+
+function validation(name, ageNum, email) {
     const nameRegex = /^[A-Za-z\s]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     let errorMessage = '';
 
-    if (!name || !age || !email) {
+    if (!name || !ageNum || !email) {
         errorMessage = 'All fields are required.';
     } else if (!nameRegex.test(name)) {
         errorMessage = 'Name can only contain letters and spaces.';
-    } else if (isNaN(age) || age < 18 || age > 90) {
+    } else if (isNaN(ageNum) || ageNum < 18 || ageNum > 90) {
         errorMessage = 'Age must be a number between 18 and 90.';
     } else if (!emailRegex.test(email)) {
         errorMessage = 'Please enter a valid email address.';
@@ -54,5 +54,6 @@ function validation(name, age, email) {
 
     return errorMessage;
 }
+
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
