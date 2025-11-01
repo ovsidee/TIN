@@ -1,0 +1,58 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: navajowhite;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+    border: 1px solid blanchedalmond;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007acc;
+}
+
+.error-box {
+    color: red;
+    background-color: #fdecea;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.success-box {
+    color: darkgreen;
+    background-color: white;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
