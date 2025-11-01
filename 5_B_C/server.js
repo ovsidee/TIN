@@ -35,7 +35,6 @@ app.post('/submit', (req, res) => {
     res.send(htmlResponse);
 });
 
-
 function validation(name, ageNum, email) {
     const nameRegex = /^[A-Za-z\s]+$/;
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -55,5 +54,8 @@ function validation(name, ageNum, email) {
     return errorMessage;
 }
 
+app.use((req, res) => {
+    res.status(404).send("Not Found");
+});
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
