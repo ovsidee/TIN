@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task List</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/scriptsToHtml/loadTasksIntoTable.js" defer></script>
+</head>
+<body>
+    <h1 class="page-title">Tasks List</h1>
+
+    <div class="header">
+        <a class="btn add" href="/tasks/add">Add Task</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Project</th>
+            <th>Created</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody id="tableWithAllTasks">
+            <!-- script will load rows -->
+        </tbody>
+    </table>
+</body>
+</html>

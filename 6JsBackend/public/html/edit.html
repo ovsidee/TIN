@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Task</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/scriptsToHtml/editTask.js" defer></script>
+</head>
+<body>
+<h1 class="page-title">Edit Task</h1>
+
+<form id="editForm" class="form-container">
+
+    <label>Description:</label>
+    <input type="text" id="description" name="description" required>
+
+    <label>Status:</label>
+    <select id="status" name="status" required>
+        <option value="pending">Pending</option>
+        <option value="done">Done</option>
+    </select>
+
+    <label>Project:</label>
+    <select id="project_fk" name="project_fk" required>
+        <!-- loaded dynamically -->
+    </select>
+
+    <div class="form-actions">
+        <button type="submit" class="btn save">Save</button>
+        <a href="/" class="btn back">Back</a>
+    </div>
+</form>
+
+</body>
+</html>
