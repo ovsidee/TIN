@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Server Status</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascripts/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Some Server Monitor</h1>
+        <small>Data updates automatically every 3 seconds.</small>
+
+        <div class="dashboard">
+            <div class="card" id="cpu-status">
+                <h2>CPU Usage</h2>
+                <div class="value" id="cpu">Loading...</div>
+            </div>
+
+            <div class="card">
+                <h2>RAM Usage</h2>
+                <div class="value" id="ram">Loading...</div>
+            </div>
+
+            <div class="card">
+                <h2>Active Users</h2>
+                <div class="value" id="users">Loading...</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Last Updated: <span id="time">--:--:--</span>
+        </div>
+    </div>
+</body>
+</html>
